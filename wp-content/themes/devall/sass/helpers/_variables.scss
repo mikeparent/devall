@@ -1,0 +1,31 @@
+$color-primary: #1B2533;
+$color-secondary: complement($color-primary);
+$color-light: #E5DBD0;
+$color-lighter: #EFE8E1;
+$color-navey: #313E50;
+$color-third: lighten( adjust-hue( $color-primary, 30% ), 15%);
+$color-links: lighten($color-primary, 35%);
+$color-dark-text: darken($color-primary, 30%);
+$color-white: #EBEBEB;
+$color-black: #1B2533;
+
+// Shades
+
+$color-primary-darker: darken($color-primary, 15%);
+$color-primary-lighter: lighten($color-primary, 15%);
+$color-secondary-lighter: lighten($color-secondary, 15%);
+
+// Breakpoints
+
+$small-devices: 560px;
+$tablet: 768px;
+$desktop: 1024px;
+$large: 1280px;
+$extra_large: 1400px;
+
+// Fonts
+
+$font-family-primary: 'CormorantLight';
+$font-family-secondary: 'AvenirBook';
+
+$font-size--normal: 16px;

@@ -1,0 +1,62 @@
+body.page-template-page-testimonials {
+
+	.hero_bg {
+		background-image: url('img/hero_imgs/testimonials.jpg');
+	}
+
+	.overlay {
+		background-image: url('img/hero_imgs/testimonials.png');
+	}
+
+	.testimonials {
+		padding: 48px 0px 32px 0px;
+		@media(min-width: $tablet){
+		    padding: 64px 0px 48px 0px;
+		}
+	}
+
+	.testimonial {
+		max-width: 744px;
+		margin: 0px auto;
+		.quote {
+			text-align: center;
+			font-size: 16px;
+			@media(min-width: $tablet){
+				font-size: 20px;
+			}
+		}
+		h2 {
+			font-size: 32px;
+			@media(min-width: $tablet){
+				font-size: 28px;
+			}
+		}
+		.pre_header {
+			font-weight: 600;
+		}
+		.vertical_line {
+			height: 32px;
+		    margin: 32px auto;
+			@media(min-width: $tablet){
+				height: 48px;
+			}
+		}
+	}
+
+	.vl2 {
+		height: 32px;
+		@media(min-width: $tablet){
+			height: 48px;
+		}
+	}
+
+	.vl3 {
+		height: 80px;
+		bottom: -48px;
+		@media(min-width: $tablet){
+			height: 130px;
+			bottom: -78px;
+		}
+	}
+
+}

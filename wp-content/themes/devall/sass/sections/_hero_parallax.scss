@@ -1,0 +1,97 @@
+.hero_image {
+	height: 320px;
+	width: 100%;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+
+	.h1_container {
+		width: 100%;
+		text-align: center;
+		h1 {
+			margin: 0px;
+		}
+		.preHeader {
+			color: #fff;
+		    font-size: 52px;
+			font-family: $font-family-primary;
+			margin: 0px;
+		}
+		@media(min-width: $tablet){
+			position: absolute;
+		}	
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 44px;
+	    width: 100%;
+		position: absolute;
+		top: 95px;
+		@media(min-width: 610px){
+			top: 166px;
+		}
+		@media(min-width: $tablet){
+			font-size: 108px;
+			top: auto;
+		}
+	}
+
+	h2 {
+		position: absolute;
+	    bottom: 111px;
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+		width: 100%;
+		font-family: 'AvenirBook';
+		text-transform: uppercase;
+		@media(max-width: $tablet - 1px){
+			display: none;
+		}
+	}
+
+	.hero_bg,
+	.overlay {
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*background-position: center;*/
+		background-position: top;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0px;
+	}
+
+	.scroll {
+	    position: absolute;
+	    bottom: 16px;
+	    left: 0px;
+	    right: 0px;
+	    margin: 0px auto;
+	    &.animate_moveupdown {
+			display: none;
+			@media(min-width: $tablet){
+				display: inline-block;
+				bottom: 56px;
+			}
+		}
+	    @media(min-width: $tablet){
+	    	display: inline-block;
+			bottom: 32px;
+		}
+		@media(min-width: $desktop){
+			bottom: 48px;
+		}
+	}
+	@media(min-width: 610px){
+		height: 450px;
+	}
+	@media(min-width: $tablet){
+		height: 100vh;
+		// height: 800px;
+	}
+}

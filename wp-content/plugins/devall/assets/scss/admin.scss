@@ -1,0 +1,40 @@
+.rwd_btn {
+	display: inline-block;
+	background: #efefef;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+.gttsd {
+	margin-bottom: 20px;
+}
+
+.gttsd:last-child {
+	margin-bottom: 0px;
+}
+
+.gttsd label,
+.gttsd input {
+	vertical-align: middle;
+}
+
+.gttsd label {
+	margin-right: 20px;
+}
+
+.gttsd input {
+    min-width: 305px;
+    padding: 5px 10px;
+}
+
+.gttsd label.block {
+	font-size: 18px;
+    padding: 10px 0px;
+    display: block;
+}
+
+.gttsd {
+	img {
+		vertical-align: middle;
+	}	
+}

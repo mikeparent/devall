@@ -1,0 +1,20 @@
+body.page-template-page-maintenance {
+
+	.hero_bg {
+		background-image: url('img/hero_bg.png');
+	}
+
+	.overlay {
+		background-image: url('img/hero_part.png');
+	}
+
+	.vl2 {
+		height: 120px;
+    	bottom: -49px;
+    	@media(min-width: $tablet){
+    		height: 160px;
+			bottom: -76px;
+    	}
+	}
+
+}

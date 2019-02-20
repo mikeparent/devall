@@ -1,0 +1,42 @@
+.quote_slider {
+
+	text-align: center;
+
+	.quote {
+		font-size: 20px;
+		@media(min-width: $desktop){
+			font-size: 30px;
+		}
+	}
+
+	.quote_name {
+		font-size: 10px;
+	}
+
+	.slick-next,
+	.slick-prev {
+		&:before {
+			content: '';
+		}
+	}
+
+	.slick-next {
+		background: url('img/icons/right.png') no-repeat 50%/contain;
+		right: 0px;
+		z-index: 1;
+	}
+
+	.slick-prev {
+		background: url('img/icons/left.png') no-repeat 50%/contain;
+		left: 0px;
+		z-index: 1;
+/*
+		left: 0px;
+		right: auto;*/
+	}
+
+	.slick-dots li button:before {
+		color: #fff;
+	}
+
+}

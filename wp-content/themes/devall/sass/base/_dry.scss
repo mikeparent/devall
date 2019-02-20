@@ -1,0 +1,99 @@
+.clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+.only_mob {
+	@media(min-width: $tablet){
+		display: none;
+	}
+}
+
+.only_mob_and_tablet {
+	@media(min-width: $desktop){
+		display: none;
+	}
+}
+
+.not_mob {
+	@media(max-width: $tablet - 1){
+		display: none !important;
+	}
+}
+
+.not_mob_or_tablet {
+	@media(max-width: $desktop - 1){
+		display: none;
+	}
+}
+
+.align_center {
+	text-align: center;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.fixed_mob_width {
+	@media(max-width: $tablet - 1px){
+	    max-width: 368px;
+		margin: 0px auto;
+		&.no_container {
+			width: 90%;
+		}
+	}
+}
+
+.indent {
+	&-tablet {
+		@media(min-width: $tablet){
+			padding-left: 96px;
+		}
+		@media(min-width: $desktop){
+			padding-left: 64px;
+		}
+		@media(min-width: $large){
+			padding-left: 96px;
+		}
+		@media(min-width: $large){
+			padding-left: 138px;
+		}
+	}
+}
+
+.text_align_center {
+	text-align: center;
+}
+
+/********************
+
+	BACKGROUNDS
+
+*********************/
+
+.bg_pattern {
+	background: #1B2533 url('img/background.png');
+}
+
+.bg_light {
+	background: $color-light;
+}
+
+.bg_lighter {
+	background: $color-lighter;	
+}
+
+.bg_navey {
+	background: $color-navey;	
+}
+
+
+

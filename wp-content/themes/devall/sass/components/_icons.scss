@@ -1,0 +1,26 @@
+.icon {
+	width: 16px;
+	height: 16px;
+    display: block;
+    margin: 0px auto;
+	&.medium {
+		width: 24px;
+		height: 24px;
+	}
+	&.large {
+		width: 32px;
+		height: 32px;
+	}
+	&-family1 {
+		background: url('img/icons/family-1.png') no-repeat 50%/contain;
+	}
+	&-family2 {
+		background: url('img/icons/family-2.png') no-repeat 50%/contain;
+	}
+	&-family3 {
+		background: url('img/icons/family-3.png') no-repeat 50%/contain;
+	}
+	&-family4 {
+		background: url('img/icons/family-4.png') no-repeat 50%/contain;
+	}
+}

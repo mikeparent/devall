@@ -1,0 +1,72 @@
+/** BROWSER COMPATIBILTY **/
+
+@mixin calc($wh, $calc, $default: 100%){
+	@wh: $default;
+	@wh: -webkit-calc($calc);
+    @wh:    -moz-calc($calc);
+}
+
+@mixin transform($thing, $value, $important: 'no'){
+	@if $important == 'no' {
+		-webkit-transform: #{$thing}(#{$value});
+			-ms-transform: #{$thing}(#{$value});
+				transform: #{$thing}(#{$value});	
+	}@else {
+		-webkit-transform: #{$thing}(#{$value}) !important;
+			-ms-transform: #{$thing}(#{$value}) !important;
+				transform: #{$thing}(#{$value}) !important;
+	}
+	
+}
+
+/** FLEX **/
+
+@mixin flex {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex_wrap($wrap) {
+	-webkit-flex-wrap: $wrap;
+        -ms-flex-wrap: $wrap;
+            flex-wrap: $wrap;
+}
+
+@mixin flex_basis($number){
+	-ms-flex-preferred-size: $number;
+        flex-basis: $number;
+}
+
+@mixin justify_content($value){
+	-webkit-justify-content: $value;
+	   -moz-justify-content: $value;
+	        justify-content: $value;
+}
+
+@mixin align_self($value){
+	-webkit-align-self: center; /* Safari 7.0+ */
+		    align-self: center;
+}
+
+@mixin align_items($value){
+	-webkit-box-align: $value;
+       -ms-flex-align: $value;
+          align-items: $value;
+}
+
+@mixin flex_direction($value){
+	-webkit-flex-direction: $value; /* Safari 6.1+ */
+	flex-direction: $value; 
+}
+
+//----------------------
+
+@mixin gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}

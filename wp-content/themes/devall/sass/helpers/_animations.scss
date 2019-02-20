@@ -1,0 +1,30 @@
+.animate_moveupdown {
+	animation: MoveUpDown 1.5s ease-in infinite;
+	/*position: relative;*/
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 100%;
+		border: solid 1px #fff;
+		position: absolute;
+	}
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 76px;
+  }
+  50% {
+    bottom: 86px;
+  }
+  @media(min-width: $tablet){
+	0%, 100% {
+		bottom: 76px;
+	}
+	50% {
+		bottom: 86px;
+	}
+  }
+}

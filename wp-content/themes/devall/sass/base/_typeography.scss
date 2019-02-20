@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'AvenirBook';
+    src: url('fonts/avenir/AvenirLTStd-Book.woff2') format('woff2'),
+         url('fonts/avenir/AvenirLTStd-Book.woff') format('woff'),
+         url('fonts/avenir/AvenirLTStd-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AvenirBlack';
+    src: url('fonts/avenir/AvenirLTStd-Black.woff2') format('woff2'),
+         url('fonts/avenir/AvenirLTStd-Black.woff') format('woff'),
+         url('fonts/avenir/AvenirLTStd-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AvenirHeavy';
+    src: url('fonts/avenir/AvenirLTStd-Heavy.woff2') format('woff2'),
+         url('fonts/avenir/AvenirLTStd-Heavy.woff') format('woff'),
+         url('fonts/avenir/AvenirLTStd-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AvenirLight';
+    src: url('fonts/avenir/AvenirLTStd-Light.woff2') format('woff2'),
+         url('fonts/avenir/AvenirLTStd-Light.woff') format('woff'),
+         url('fonts/avenir/AvenirLTStd-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('fonts/CormorantGaramond-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantLight';
+    src: url('fonts/CormorantGaramond-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantItalic';
+    src: url('fonts/CormorantGaramond-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantLightItalic';
+    src: url('fonts/CormorantGaramond-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantBold';
+    src: url('fonts/CormorantGaramond-Bold.ttf') format('truetype');
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+    font-family: 'Cormorant';
+}
+
+h5, h6, a, li, input, div, address {
+	font-family: 'AvenirLight';
+    color: $color-black;
+}
+
+h1 {
+    line-height: 0.95em;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'CormorantLight';
+    em {
+        font-family: 'CormorantLightItalic';
+    }
+    @media(min-width: $tablet){
+        font-size: 44px;
+    }
+    @media(min-width: $desktop){
+        font-size: 60px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Cormorant';
+    em {
+        font-family: 'CormorantItalic';
+    }
+    @media(min-width: $tablet){
+        font-size: 36px;
+    }
+    @media(min-width: $desktop){
+        font-size: 40px;
+    }
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+.title {
+    font-family: 'CormorantLight';
+    em {
+        font-family: 'CormorantLightItalic';
+    }
+}
+
+em {
+    font-family: 'CormorantItalic';
+}
+
+p {
+    font-family: 'AvenirBook';
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.3em;
+}
+
+a {
+	&:hover {
+
+	}
+	&:active {
+
+	}
+}
+
+address {
+    font-style: normal;
+}
+
+blockquote {
+    font-family: 'CormorantItalic';
+    border-left: solid 1px #1B2533;
+    padding-left: 24px;
+    margin: 0px;
+    font-size: 20px;
+    &.invert {
+        border-left: solid 1px $color-white;
+        color: $color-white;
+    }
+}
+
+.heading_group {
+    position: relative;
+    z-index: 2;
+}
+
+.pre_heading {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    font-family: 'AvenirHeavy';
+}
+
+.text_light {
+    font-family: 'AvenirLight';
+}
+
+.text_heavy {
+    font-family: 'AvenirHeavy';
+}
+
+.text_book {
+    font-family: 'AvenirBook';
+}
+
+.quote {
+    font-family: 'CormorantItalic';
+}
+
+

@@ -1,0 +1,53 @@
+/*
+Theme Name: Devall
+Theme URI: http://www.madebyparent.com/project/devall-son/
+Author: Made by Parent
+Author URI: http://www.madebyparent.com/
+Description: vfdvdfvfd
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: wptheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+
+}
+
+h1, h2, h3, p {
+	/*font-family: 'Josefin Slab', serif;
+	font-family: 'Viga', sans-serif;
+	font-family: 'Yatra One', cursive;*/
+}
+
+@import 'helpers/variables',
+		'helpers/functions',
+		'helpers/mixins',
+		'helpers/animations',
+		'base/reset',
+		'base/typeography',
+		'base/elements',
+		'base/dry',
+		'vendor/parallax',
+		'layout/grid',
+		'layout/header',
+		'layout/navigation',
+		'layout/footer',
+		'components/btn',
+		'components/icons',
+		'components/tree',
+		'components/lines',
+		'components/section_navigator',
+		'sections/post_section',
+		'sections/quote_slider',
+		'sections/hero_parallax',
+		'sections/call2action_block',
+		'pages/home',
+		'pages/our_heritage',
+		'pages/testimonials',
+		'pages/maintenance',
+		'pages/news_post',
+		'pages/berevement';

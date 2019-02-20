@@ -1,0 +1,8 @@
+QUESTIONS
+- Home page hero image, should all text be in image SEO considerations?
+
+CUSTOM STRUCTURE
+
+	PAGES
+	Custom Fields
+		-> Second featured image 

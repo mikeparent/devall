@@ -1,0 +1,100 @@
+.tree {
+
+	background: #efe8e1;
+	z-index: 3;
+	position: relative;
+
+	margin-top: 32px;
+
+	@media(min-width: $tablet){
+		margin-top: 48px;
+	}
+	
+	&_box {
+		position: relative;
+		text-align: center;
+		padding-top: 32px;
+		flex-basis: 50%;
+		p {
+			padding: 0px 16px;
+		}
+		.vertical_line {
+			height: 24px;
+		}
+		@media(min-width: $tablet){
+			flex-basis: 25%;
+		}
+	}
+
+	.flex {
+		@media(max-width: $tablet - 1px){
+			.tree_box:nth-child(1) {
+				.horizonal_line {
+					width: 50%;
+					right: 0px;
+				}
+			}
+			.tree_box:nth-child(2){
+				.horizonal_line {
+					width: 50%;
+				}
+			}
+			.tree_box:nth-child(3),
+			.tree_box:nth-child(4) {
+				.horizonal_line {
+					display: none;
+				}
+			}
+		}
+		@media(min-width: $tablet){
+			.tree_box:first-child {
+				.horizonal_line {
+					width: 50%;
+					right: 0px;
+				}
+			}
+			.tree_box:last-child {
+				.horizonal_line {
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	.tree_footer {
+		position: relative;
+		.horizonal_line {
+			display: inline-block !important;
+			bottom: 0px;
+			top: auto;
+		}
+		.tree_box {
+			padding-top: 0px;
+			&:nth-child(2),
+			&:nth-child(3) {
+				@media(max-width: $tablet - 1px){
+					display: none;
+				}
+			}
+			&:last-child {
+				.horizonal_line {
+					right: auto;
+					left: 0px;
+					width: 50%;
+				}
+			}
+			&:nth-child(2),
+			&:nth-child(3){
+				.horizonal_line {
+					right: auto;
+					left: 0px;
+				}
+			}
+		}
+	}
+
+	.pullup {
+	    margin-top: -42px;
+	}
+
+}

@@ -1,0 +1,21 @@
+
+.mbp_section_navigator {
+	position: fixed;
+	top: 50%;
+	right: 36px;	
+	span {
+		display: block;
+		width: 5px;
+		height: 5px;
+		border-radius: 100%;
+		background: #707070;
+		margin-bottom: 10px;
+		cursor: pointer;
+		&.current {
+			background: #BBBEC2;
+		}
+	}
+	&.hide {
+		display: none;
+	}
+}
