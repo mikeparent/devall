@@ -17,6 +17,12 @@
         height: 0px;
     }
 
+    &.onlymob {
+        @media(min-width: $tablet){
+            display: none;
+        }
+    }
+
     &.top {
     	bottom: auto;
     	top: 0px;

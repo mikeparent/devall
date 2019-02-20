@@ -10,12 +10,14 @@
 
 		wp_enqueue_script( 'parallax_js', get_template_directory_uri() . '/js/parallax.js', array('jquery'), '', true);
 		wp_enqueue_script( 'mbp_section_navigator_js', get_template_directory_uri() . '/js/section_navigator.js', array('jquery'), '', true);
-		wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
+
+		wp_enqueue_script( 'slick_js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '', true);
+
+		wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery', 'slick_js'), '', true);
 
 		// FONT PAGE
 
 		if(is_front_page()){
-			wp_enqueue_script( 'slick_js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '', true);
 			wp_enqueue_script( 'home_js', get_template_directory_uri() . '/js/pages/home.js', array('jquery', 'slick_js', 'parallax_js', 'main_js'), '', true);
 		}
 
@@ -29,6 +31,12 @@
 
 		if(is_page('testimonials')){
 			wp_enqueue_script( 'testimonial_js', get_template_directory_uri() . '/js/pages/testimonial.js', array('jquery', 'parallax_js', 'main_js'), '', true);
+		}
+
+		// BEREVEMENT
+
+		if(is_page('berevement')){
+			wp_enqueue_script( 'testimonial_js', get_template_directory_uri() . '/js/pages/berevement.js', array('jquery', 'parallax_js', 'main_js'), '', true);
 		}
 
 	}

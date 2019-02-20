@@ -22,6 +22,11 @@
 			'link' => home_url() . '/maintenance-repairs',
 			'text' => 'Maintenance &amp; Repairs',
 			'status' => ''
+		),
+		'berevement' => array(
+			'link' => home_url() . '/berevement',
+			'text' => 'Berevement Support',
+			'status' => ''
 		)
 	);
 

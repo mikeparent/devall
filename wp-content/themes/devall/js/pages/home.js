@@ -1,24 +1,24 @@
 jQuery(document).ready(function($){
 
-	$('#quote_slider .slides').slick({
-		dots: true,
-		infinite: true,
-		speed: 1000,
-		centerMode: true,
-		centerPadding: 0,
-		variableWidth: false,
-		variableHeight: false,
-		adaptiveHeight: true,
-		arrows: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					arrows: false
-				}
-			}
-		]
-	});
+	// $('#quote_slider .slides').slick({
+	// 	dots: true,
+	// 	infinite: true,
+	// 	speed: 1000,
+	// 	centerMode: true,
+	// 	centerPadding: 0,
+	// 	variableWidth: false,
+	// 	variableHeight: false,
+	// 	adaptiveHeight: true,
+	// 	arrows: true,
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 768,
+	// 			settings: {
+	// 				arrows: false
+	// 			}
+	// 		}
+	// 	]
+	// });
 
 	// Page navigator
 

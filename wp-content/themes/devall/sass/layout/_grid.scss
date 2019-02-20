@@ -20,10 +20,16 @@
 		margin: 0px 2.5%;
 		width: 95%;
 	}
+	&.relative {
+		position: relative;
+		overflow: hidden;
+	}
 }
 
 .row {
 
+    clear: both;
+	
 	&::after {
 	    content: "";
 	    clear: both;

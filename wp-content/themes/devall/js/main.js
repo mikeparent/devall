@@ -86,6 +86,28 @@ jQuery(document).ready(function($){
 
 	var parallaxHero = new window.Parallax('parallax_hero', 0, true);
 
+	// Slick Testimonials
+
+	$('#quote_slider .slides').slick({
+		dots: true,
+		infinite: true,
+		speed: 1000,
+		centerMode: true,
+		centerPadding: 0,
+		variableWidth: false,
+		variableHeight: false,
+		adaptiveHeight: true,
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false
+				}
+			}
+		]
+	});
+
 	// var mainMenu = $('.main_menu');
 
 	// $('#services_click').on('click', function(){
