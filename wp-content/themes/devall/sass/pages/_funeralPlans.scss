@@ -7,4 +7,16 @@
 	.overlay {
 		background-image: url('img/hero_imgs/funeral-plans.png');
 	}
+
+	@media (max-width: $small-devices) {
+		.tree {
+			&_box {
+				flex-basis: 100%;
+			}
+
+			.horizonal_line {
+				display: none;
+			}
+		}
+	}
 }

@@ -546,6 +546,9 @@ img {
 img.natural {
   width: auto;
 }
+img.centralise {
+  margin: auto;
+}
 
 section {
   /*overflow: hidden;*/
@@ -2453,6 +2456,9 @@ footer .mob_logos img {
 .tree .pullup {
   margin-top: -42px;
 }
+.tree.no_margin {
+  margin: 0;
+}
 
 .vertical_line {
   width: 1px;
@@ -2561,7 +2567,8 @@ footer .mob_logos img {
 }
 @media (min-width: 1024px) {
   .vertical_line.line_1 {
-    height: 93px;
+    height: 96px;
+    bottom: -48px;
   }
 }
 .vertical_line.line_2 {
@@ -3952,6 +3959,14 @@ body.page-template-page-berevement .bg_light .vertical_line.bottom {
 }
 .page-template-page-funeral-plans .overlay {
   background-image: url("img/hero_imgs/funeral-plans.png");
+}
+@media (max-width: 560px) {
+  .page-template-page-funeral-plans .tree_box {
+    flex-basis: 100%;
+  }
+  .page-template-page-funeral-plans .tree .horizonal_line {
+    display: none;
+  }
 }
 
 .page-template-page-memorial .hero_bg {

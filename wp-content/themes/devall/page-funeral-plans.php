@@ -32,8 +32,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="the_content">
-                        <h3 class="align_center">For <em>many</em> people, planning their funeral has become an <em>established</em> way of looking at the <em>future</em>, just like making a <em>Will</em>.</h3>
+					<div class="the_content align_center">
+                        <img class="natural centralise" src="<?php echo get_bloginfo('template_directory'); ?>/img/logos/gc_logo_funeralplans.png" />
+                        <h3>For <em>many</em> people, planning their funeral has become an <em>established</em> way of looking at the <em>future</em>, just like making a <em>Will</em>.</h3>
 					</div>
                 </div>
                 
@@ -42,17 +43,19 @@
 		</div>
 	</div>
 
-	<div class="vertical_line bottom line_1"></div>
+	<div class="vertical_line bottom line_6"></div>
 </section>
 
 <section class="mbp_section post_section  bg_lighter mbp_parallax" id="parallax_two">
+
+    <div class="vertical_line top line_6 dark"></div>
 
 	<div class="fixed_mob_width no_container">
 		<div class="container">
 
             <div class="row">
                 <div class="col-12">
-                    <div class="tree">
+                    <div class="tree no_margin">
                         <div class="horizonal_line l2r dark"></div>
                         <div class="horizonal_line r2l dark"></div>
                         
