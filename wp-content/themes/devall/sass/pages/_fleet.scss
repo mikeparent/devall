@@ -1,0 +1,25 @@
+.page-template-page-fleet {
+
+    .hero_bg {
+		background-image: url('img/hero_imgs/fleet.jpg');
+	}
+
+	.overlay {
+		background-image: url('img/hero_imgs/fleet.png');
+	}
+
+    .img_right {
+        @media(max-width: $tablet - 1px){
+            margin-top: 54px;
+        }
+        @media(min-width: $tablet){
+            width: 288px;
+        }
+        @media(min-width: $desktop){
+            width: 354px;
+        }
+        @media(min-width: $large){
+            width: 264px;
+        }
+    }
+}

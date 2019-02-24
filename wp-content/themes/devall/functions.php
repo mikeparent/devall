@@ -16,27 +16,33 @@
 		wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery', 'slick_js'), '', true);
 
 		// FONT PAGE
-
 		if(is_front_page()){
 			wp_enqueue_script( 'home_js', get_template_directory_uri() . '/js/pages/home.js', array('jquery', 'slick_js', 'parallax_js', 'main_js'), '', true);
 		}
 
 		// OUR HERITAGE
-
 		if(is_page('our-heritage')){
 			wp_enqueue_script( 'our_heritage_js', get_template_directory_uri() . '/js/pages/our-heritage.js', array('jquery', 'parallax_js', 'main_js'), '', true);
 		}
 
 		// TESTIMONIALS
-
 		if(is_page('testimonials')){
 			wp_enqueue_script( 'testimonial_js', get_template_directory_uri() . '/js/pages/testimonial.js', array('jquery', 'parallax_js', 'main_js'), '', true);
 		}
 
 		// BEREVEMENT
-
 		if(is_page('berevement')){
 			wp_enqueue_script( 'testimonial_js', get_template_directory_uri() . '/js/pages/berevement.js', array('jquery', 'parallax_js', 'main_js'), '', true);
+		}
+
+		// Catering
+		if(is_page('catering')){
+			wp_enqueue_script( 'catering_js', get_template_directory_uri() . '/js/pages/catering.js', array('jquery', 'parallax_js', 'main_js'), '', true);
+		}
+
+		// Fleet
+		if(is_page('fleet')){
+			wp_enqueue_script( 'fleet_js', get_template_directory_uri() . '/js/pages/fleet.js', array('jquery', 'parallax_js', 'main_js'), '', true);
 		}
 
 	}

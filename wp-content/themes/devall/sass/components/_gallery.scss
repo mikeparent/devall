@@ -1,0 +1,72 @@
+.gallery {
+
+    .slick-arrow {
+        top: 0;
+        height: 100%;
+        width: 24px;
+        background: #D6CDC3;
+        transform: none;
+
+        z-index: 10;
+
+        .bg_pattern & { 
+            background: #2A3646;
+        }
+
+        &:before {
+            content: '';
+            width: 7px;
+            height: 13px;
+            display: inline-block;
+            background-size: contain;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+
+        &:before {
+            background-image: url('img/icons/left-dark.png');
+        
+            .bg_pattern & { 
+                background-image: url('img/icons/left.png');
+            }
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        &:before {
+            background-image: url('img/icons/right-dark.png');
+        
+            .bg_pattern & { 
+                background-image: url('img/icons/right.png');
+            }
+        }
+    }
+
+    &__nav {
+        background: $color-light;
+
+        .bg_pattern & {
+            background: $color-primary-lighter;
+        }
+
+        .slick-list {
+            margin: 0 30px;
+        }
+
+        &__item {
+            padding: 10px 5px;
+
+            img {
+                @media(min-width: $tablet){
+                    height: 74px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}

@@ -122,4 +122,56 @@ jQuery(document).ready(function($){
 	// 	}
 	// });
 
+	// ACCORDION 
+
+	$('.accordion__item').click(function() {
+
+		if($(this).hasClass('accordion__item--active')) {
+			$(this).removeClass('accordion__item--active');
+			$(this).find('.accordion__section').slideUp();
+			$('.accordion__item').removeClass('accordion__item--inactive');
+		} else {
+			$('.accordion__item').removeClass('accordion__item--active').addClass('accordion__item--inactive');
+			$('.accordion__section').slideUp();
+			$(this).addClass('accordion__item--active');
+			$(this).find('.accordion__section').slideDown();
+		}
+		
+	});
+
+	// GALLERY
+	if($('.gallery__nav').length) {
+		$('.gallery__holder').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.gallery__nav'
+		});
+		$('.gallery__nav').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.gallery__holder',
+			dots: false,
+			centerMode: false,
+			focusOnSelect: true,
+			responsive: [
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 3
+					}
+				}
+			]
+		});
+	} else {
+		$('.gallery__holder').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+		});
+	}
+
 });
+
