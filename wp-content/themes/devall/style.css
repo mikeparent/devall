@@ -2532,6 +2532,9 @@ footer .mob_logos img {
 .vertical_line.fill .circle_before {
   opacity: 1;
 }
+.vertical_line.full-height {
+  height: 100%;
+}
 .vertical_line .circle_after, .vertical_line .circle_before {
   transition: 0.5s;
 }
@@ -2759,6 +2762,50 @@ footer .mob_logos img {
 .svgLine line {
   stroke: red;
   stroke-width: 2;
+}
+
+.form__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.form__item input,
+.form__item textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #EBEBEB;
+  width: 100%;
+  padding: 5px 0;
+  background: none;
+  height: 25px;
+  resize: none;
+  color: #EBEBEB;
+  font-family: "AvenirBook";
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.3em;
+}
+.form__item input + label,
+.form__item textarea + label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: #EBEBEB;
+  font-size: 11px;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+.form__item input:focus + label, .form__item input:valid + label,
+.form__item textarea:focus + label,
+.form__item textarea:valid + label {
+  top: -20px;
+  color: #597aa7;
+}
+
+.contact-details a {
+  color: #EBEBEB;
+  text-decoration: none;
 }
 
 .mbp_section_navigator {
@@ -3974,6 +4021,19 @@ body.page-template-page-berevement .bg_light .vertical_line.bottom {
 }
 .page-template-page-memorial .overlay {
   background-image: url("img/hero_imgs/memorial.png");
+}
+
+.map {
+  height: 100vh;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
